@@ -1,3 +1,5 @@
+# Tutorial section #06
+
 require 'spec_helper'
 
 describe "Deleting todo lists" do

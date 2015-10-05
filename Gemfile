@@ -12,10 +12,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 2.0'         #02-4
 end
 
 group :test do
-  gem 'capybara', '~> 2.1.0'
-  gem 'shoulda-matchers', '~> 2.4.0'
+  gem 'capybara', '~> 2.1.0'          #02-4
+  gem 'shoulda-matchers', '~> 2.4.0'  #07-1
 end
