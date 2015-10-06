@@ -226,4 +226,67 @@
 	
 	16. Modify spec/features/todo_items/index_spec.rb, to include todo items
 	
+	17. Track and commit
+	git status
+	git commit -am "Write tests for todo items"
+
+09 - Adding To Do Items
+
+	1. Create test file for creating todo items
+	touch spec/features/todo_items/create_spec.rb
+
+	2. Modify test file, run to see errors
+	bin/rspec --format=documentation spec/features/todo_items/create_spec.rb
+
+	3. add "New Todo Item" link to app/views/todo_items/index.html.erb.  Check routes to figure out new todo item link URI Pattern.
+	bin/rake routes
+
+	4. Modify todo_items_controler.rb to include "new" action
+	
+	5. Create new layout for new todo list items, edit
+	touch app/views/todo_items/new.html.erb
+
+	6. Create new "create" action for the TodoItemsController
+	
+	7. Modify app/views/layouts/application.html.erb to display flash messages
+	
+	8. Run test again
+	bin/rspec --format=documentation spec/features/todo_items/create_spec.rb
+
+	9. Track and commit
+	git status
+	git add .
+	git commit -am "Write tests for todo items"
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
