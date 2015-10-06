@@ -213,3 +213,17 @@
 
 	10. Go back to todo_lists/index.html.erb and add in the proper code.
 
+	11. Track and commit
+	
+	12. Add todo list title check in spec/features/todo_items/index_spec.rb
+	
+	13. Run test, it will fail because views/todo_items/index.html.erb does not have code to display the todo list title
+	bin/rspec --format=documentation spec/features/todo_items/index_spec.rb
+
+	14. Open up app/controllers/todo_items_controller.rb; find todo list
+	
+	15. Modify tests in app/views/todo_items/index.html.erb
+	
+	16. Modify spec/features/todo_items/index_spec.rb, to include todo items
+	
+
