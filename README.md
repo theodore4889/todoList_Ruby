@@ -183,4 +183,33 @@
 	git add .
 	git commit -am "Add todo item model and associated specs"
 
+
 08 - Viewing Todo Items
+
+	1. Generate Todo Items controller
+	bin/rails generate controller todo_items index
+
+	2. Create a directory to house todo items features
+	mkdir -p spec/features/todo_items
+
+	3. Create todo items index spec file
+	touch spec/features/todo_items/index_spec.rb
+
+	4. Think a bit.  We hav a todo list index page, and on that page we want to be able to link to the todo items index page located in app/views/todo_items/index.html.erb.  So, write test that checks if we can navigate to todo items pages when clicked from todo List 
+	spec/features/todo_items/index_spec.rb
+
+	5. Run test, it will fail because there isn't yet a "List Items" Link
+	bin/rspec spec/features/todo_items/index_spec.rb
+
+	6. Open up routes file.  We want to make sure there is a route to our list items, so we add in that specification. 
+	
+	7. List routes in application.  Notice that there is a "todo_list_todo_items" prefix that is intended to get todo list items.
+	bin/rake routes
+
+	8. Create a "List Items" link in todo-lists/index.html.erb, add routes prefix and append "_path"
+	
+	9. Run test again, it will fail because we're missing the required keys for the todo list id.  Take a look at the URI Pattern for the route and notice the id requirement.
+	bin/rspec spec/features/todo_items/index_spec.rb
+
+	10. Go back to todo_lists/index.html.erb and add in the proper code.
+

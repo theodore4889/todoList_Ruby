@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  get 'todo_items/index'
+  # 'todo_items/index'      #Commented from 08-7
 
-  resources :todo_lists     #03-6
-  root 'todo_lists#index'   #03-6
+  resources :todo_lists do    #03-6
+    resources :todo_items     #08-6
+  end
+  root 'todo_lists#index'     #03-6
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
