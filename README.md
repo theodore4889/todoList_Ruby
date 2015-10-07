@@ -319,9 +319,20 @@
 
 	4. Run Test
 	bin/rspec --format=documentation spec/features/todo_items/delete_spec.rb
+	
+	5. Also test out in the browser
+	
+	6. Track and commit
+	
+13 - Cleanup test code
 
+	1. View spec/spec_helper.rb and notice that anything included in the spec/support folder gets included. So, lets create that directory
+	mkdir spec/support
 
+	2. Create todo_list_helpers.rb in the support folder, add code
+	touch spec/support/todo_list_helpers.rb
 
+	3. Include TodoListHelpers in spec_helper.rb file
 
 
 
