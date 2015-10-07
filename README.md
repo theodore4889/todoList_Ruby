@@ -329,10 +329,12 @@
 	1. View spec/spec_helper.rb and notice that anything included in the spec/support folder gets included. So, lets create that directory
 	mkdir spec/support
 
-	2. Create todo_list_helpers.rb in the support folder, add code
+	2. Create todo_list_helpers.rb in the support folder, add code and delete code from other spec/feature files
 	touch spec/support/todo_list_helpers.rb
 
 	3. Include TodoListHelpers in spec_helper.rb file
+	
+	4. Track and Commit
 
 
 

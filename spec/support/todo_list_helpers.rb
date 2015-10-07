@@ -3,7 +3,7 @@ module TodoListHelpers
     # Added on step 08-15
     def visit_todo_list(list)
         visit "/todo_lists"
-        within "#todo_list_#{list.id}" do 
+        within dom_id_for(list) do      # 13-7 edit
             click_link "List Items"
         end
     end
