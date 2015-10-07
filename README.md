@@ -256,15 +256,38 @@
 	9. Track and commit
 	git status
 	git add .
-	git commit -am "Write tests for todo items"
+	git commit -am "Added test for creating todo items and associated code"
 	
+10 - Adding Validations to Todo Items
 
+	1. Add cases to spec/features/todo_items/create_spec.rb
 
+	2. Add validations to model by updating todo_item.rb model
+	
+	3. Run test
+	bin/rspec --format=documentation spec/features/todo_items/create_spec.rb
 
+	4. Run all tests to see if everything is still valid
+	bin/rspec --format=documentation
+	
+	5. Start server and take a look at app
 
+	6. Update app/assets/stylesheets/application.css
+	
+	7. Create new file for testing editing todo items
+	touch spec/features/todo_items/edit_spec.rb
+	
+	8. Modify app/views/todo_items/index.html.erb
 
+	9. Modify app/controllers/todo_items/todo_items_controller.rb
+	
+	10. Create todo item edit view
+	touch app/views/todo_items/edit.html.erb
+	
+	11. In order to not have to type
 
-
+	8. Run test
+	bin/rspec --format=documentation spec/features/todo_items/edit_spec.rb
 
 
 
