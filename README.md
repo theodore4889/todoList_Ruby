@@ -284,14 +284,23 @@
 	10. Create todo item edit view
 	touch app/views/todo_items/edit.html.erb
 	
-	11. In order to not have to type
+	11. In order to not have to type the todo_list everytime we're in a controller or a view, we can give the todo_list id this way
 
-	8. Run test
+	12. Run test
 	bin/rspec --format=documentation spec/features/todo_items/edit_spec.rb
+	
+	13. Track and commit
+	git status
+	git add .
+	git commit -m "Add specs and code for editing todo items"
+	
 
+11 - Cleanup our code
 
-
-
+	1. Cleanup todo_items_controller.rb
+ 
+	2. app/views/todo_items edit.html.erb and new.html.erb are the exact same.  We create a "partial" to handle this.
+	touch app/views/todo_items/_form.html.erb
 
 
 
