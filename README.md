@@ -302,12 +302,23 @@
 	2. app/views/todo_items edit.html.erb and new.html.erb are the exact same.  We create a "partial" to handle this.
 	touch app/views/todo_items/_form.html.erb
 
+	3. Track and Commit
+	git status
+	git add .
+	git commit -m "Add specs and code for editing todo items"
 
 
+12 - Deleting Todo Items
 
+	1. Create new file for delete tests
+	touch spec/features/todo_items/delete_spec.rb
+	
+	2. Edit app/views/todo_items/index.html.erb to include delete link
+	
+	3. Edit app/controllers/todo_items_controller.rb to include destroy action
 
-
-
+	4. Run Test
+	bin/rspec --format=documentation spec/features/todo_items/delete_spec.rb
 
 
 
