@@ -335,6 +335,19 @@
 	3. Include TodoListHelpers in spec_helper.rb file
 	
 	4. Track and Commit
+	
+	5. Create new file
+	touch spec/support/rails_dom_id_helper.rb
+
+	6. Include RailsDomIdHelper in spec_helper.rb file
+	
+	7. Update todo_list_helper.rb to use the function we just created
+	
+	8. Track and Commit
+
+12 - Create header on the page
+
+	1. Open up app/views/layouts/application.html.erb, add in header
 
 
 

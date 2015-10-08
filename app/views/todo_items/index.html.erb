@@ -1,18 +1,18 @@
 <h1><%= @todo_list.title %></h1> <!--#08-15-->
 
 <!--Added from step 08-16-->
-<ul class="todo_items">
+<table class="todo_items">
     <% @todo_list.todo_items.each do |todo_item| %>
-    <li id="<%= dom_id(todo_item) %>">
-        <%= todo_item.content %>
+    <tr id="<%= dom_id(todo_item) %>">
+        <td><%= todo_item.content %></td>
         <!--Added from step 10-8-->
-        <%= link_to "Edit", edit_todo_list_todo_item_path(todo_item) %>
+        <td><%= link_to "Edit", edit_todo_list_todo_item_path(todo_item) %></td>
         <!--Added from step 12-2-->
-        <%= link_to "Delete", todo_list_todo_item_path(todo_item), method: :delete, data: { confirm: "Are you sure?" } %>
+        <td><%= link_to "Delete", todo_list_todo_item_path(todo_item), method: :delete, data: { confirm: "Are you sure?" } %></td>
         <!--end add-->
-    </li>
+    </tr>
     <% end %>
-</ul>
+</table>
 
 <!--Added from step 09-3-->
 <p>

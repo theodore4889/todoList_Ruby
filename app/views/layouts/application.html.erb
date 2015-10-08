@@ -8,6 +8,16 @@
 </head>
 <body>
   
+  <!--Added in step 12-1-->
+  <div class="nav">
+    <h1><%= link_to "To Do List", root_path %></h1>
+    <ul>
+      <li><%= link_to "Todo Lists", todo_lists_path %></li>
+    </ul>
+    <br class="clear" />
+  </div>
+  
+  
   <!--Added from step 09-7-->
   <% flash.each do |type, message| %>
   <div class="alert flash <%= type %>">
