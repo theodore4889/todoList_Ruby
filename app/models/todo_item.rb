@@ -3,4 +3,9 @@ class TodoItem < ActiveRecord::Base
   
   validates :content, presence: true,        #Added from 10-2
                       length: { minimum: 2}
+  
+  # Added from step 13-11                    
+  def completed?
+    !completed_at.blank?
+  end
 end

@@ -349,11 +349,43 @@
 
 	1. Open up app/views/layouts/application.html.erb, add in header
 
+	2. Open app/assets/stylesheets/application.css, make updates
+	
+	3. Track and COmmit
 
+13 - Add "Completed At" functionality
 
+	1. Generate new migration file to add a field to database
+	bin/rails generate migration add_completed_at_to_todo_items
 
+	2. Open and modify db/migrate/20151008023627_add_completed_at_todo_items.rb
+	
+	3. Migrate databases
+	bin/rake db:migrate
+	bin/rake db:migrate RAILS_ENV=test
+	
+	4. Create new test file for complete todo items, and add code
+	touch spec/features/todo_items/complete_spec.rb
 
+	5. Add a new route to mark an individual item as complete
+	
+	6. Add to our view in app/views/todo_items/index.html.erb
 
+	7. Add complete action to todo items controller
+	
+	8. Track and Commit
+	
+	9. Add another test case to complete_spec.rb
+	
+	10. Add to our view in app/views/todo_items/index.html.erb
+	
+	11. To remove some of the logic from our index.html.erb file, we will do some stuff
+		- Modify spec/models/todo_item_spec.rb, add "#completed?" description and tests
+		- Modify app/models/todo_item.rb, add completed? definition
+		- Modify app/views/todo_items/index.html.erb
+		- Modify todo_items.css
+	
+	12. Commit
 
 
 
