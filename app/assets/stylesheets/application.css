@@ -52,6 +52,7 @@ div.nav ul li a {
 div.nav ul li a:hover {
   background: #aaa;
   color: #eee;
+}
 
 div.alert {
     border: 2px solid #aaa;

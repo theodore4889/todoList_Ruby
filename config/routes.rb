@@ -2,7 +2,13 @@ Rails.application.routes.draw do
   # 'todo_items/index'      #Commented from 08-7
 
   resources :todo_lists do    #03-6
-    resources :todo_items     #08-6
+    resources :todo_items do  #08-6
+     
+      # Added from step 13-5
+      member do
+        patch :complete
+      end
+    end
   end
   
   root 'todo_lists#index'     #03-6
